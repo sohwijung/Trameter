@@ -1,0 +1,279 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+} 
+
+header {
+    background: #353B51;
+    height: 8%;
+    width: 100%;
+    display: inline-block;
+    border-radius: 36px;
+}
+
+h2 {
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 50px;
+    margin-bottom: 0px;
+    font-weight: lighter;
+    padding-top: 10%;
+}
+
+p {
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    color: #707070;
+}
+
+input {
+    width: 60%;
+    height: 50px;
+    margin-right: 0px;
+    font-size: 18px;
+}
+
+button {
+    width: 30%;
+    height: 50px;
+    font-size: 18px;
+    color: white;
+    background-color: #FF725E;
+}
+
+.main_link {
+    font-family: "Ubuntu";
+    color: white;
+    font-size: 25px;
+    margin-left: 100px;
+    vertical-align: center;
+} 
+
+.instantly {
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+    font-size: 44px;
+}
+
+.first_block {
+    display: flex;
+    flex-direction: row;
+    height: 92%;
+    margin-top: 0px;
+}
+
+.element_first_block {
+    width: 50%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 120px;
+    padding-bottom: 110px;
+}
+
+.element_first_block img {
+    width: 80%;
+    padding-right: 50px;
+}
+
+.second_block {
+    background-color: #353B51;
+    height: 100%;
+    text-align: center;
+}
+
+.booking, .made_by, .be_first, .changing {
+    color: #DAE0EC;
+}
+
+.in_second_block {
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.each_in_second_block {
+    margin-top: 80px;
+    background-color: white;
+    height: 250px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.each_in_second_block h3 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 28px;
+}
+
+.third_block {
+    background-color: #6796B4;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.in_third_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.in_third_block p {
+    color: white;
+}
+
+.third_block form {
+    margin-top: 100px;
+}
+
+.be_first {
+    padding-bottom: 50px;
+}
+
+.fourth_block {
+    background: #353B51;
+    text-align: center;
+    height: 100%;
+}
+
+.in_fourth_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.each_in_fourth_block h3 {
+    font-size: 32px;
+    color: white;    
+    font-family: 'PT Sans', sans-serif;
+}
+
+.each_in_fourth_block {
+    border-style: solid;
+    border-color: #707070;
+    border-width: 1px;
+    border-radius: 10px;
+    margin: 30px;
+    margin-top: 80px;
+    margin-bottom: 150px;
+    width: 25%;
+}
+
+.each_p_in_fourth_block {
+    background-color: white;
+    padding: 14px;
+    text-align: center;
+}
+
+.students {
+    background-color: #84EBAD;
+    width: 100%;
+    padding: 2px;
+}
+
+.professionals {
+    background-color: #CA5E8F;
+    color: white;
+    width: 100%;
+    padding: 2px;
+}
+
+.vacationers {
+    background-color: #6796B4;
+    color: white;
+    width: 100%;
+    padding: 2px;
+}
+
+.fifth_block {
+    background-color: #6796B4;
+    width: 75%;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 160px;
+    margin-bottom: 100px;
+    text-align: center;
+    height: 50%;
+}
+
+.fifth_block form {
+    margin-top: 6%;
+}
+
+.fifth_block p {
+    color: #DAE0EC;
+}
+
+.sixth_block {
+    margin-bottom: 140px;
+}
+
+.sixth_block h2 {
+    text-align: center;
+    color: black;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.sixth_block h3 {
+    color: white;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 26px;
+    font-weight: lighter;
+}
+
+.each_sixth_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.each_sixth_block h3 {
+    background-color: #353B51;
+    width: 500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+footer {
+    background: #646A82;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.logo {
+    width: 80px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.footer_trameter {
+    font-family: "Ubuntu";
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.email {
+    margin-top: 15px;
+}
+
+.email a {
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+}
