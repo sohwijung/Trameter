@@ -6,23 +6,30 @@
     <link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=cyrillic,latin' rel='stylesheet' type='text/css'/>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" type='text/css'>
     <title>Trameter</title>
-
 </head>
 <body>
     <header>
-        <a href="index.html"><h1 class="main_link">trameter <img src="images/green_heart.png"/></h1></a>
+        <div class = "header_flex">
+            <a href="index.html"><h1 class="main_link">trameter <img src="images/green_heart.png"/></h1></a>
+            <form class="header_form">
+                <input type="text" placeholder="Enter your email" class="header_text">
+                <button class="header_button">Get early access</button>
+            </form>
+        </div>
     </header>
 
     <div class="first_block">
         <div class="element_first_block">
+            <div class="description_first_block">
             <h2 class="instantly">Instantly book travel packages created from your budget</h2>
-            <p>Trameter automatically combines the best hotel, flight, and car into a single travel package that matches your budget. It's free!</p>
+            <p class="main_description">Trameter automatically combines the best hotel, flight, and car into a single travel package that matches your budget. It's free!</p>
             <form>
                 <div class="first_block_form">
                     <input type="text" placeholder="Enter your email" class="first_block_text">
                     <button class="first_block_button">Get early access</button>
                 </div>
             </form>
+            </div>
         </div>
 
         <div class="element_first_block"><img src="images/trip-pana.png"/></div>
@@ -87,9 +94,9 @@
         </div>
 
 
-        <form>
-            <input type="text" placeholder="Enter your email">
-            <button>Get early access</button>
+        <form class="third_block_form">
+            <input type="text" class = "third_block_text" placeholder="Enter your email">
+            <button class = "third_block_button" >Get early access</button>
         </form>
 
         <p class="be_first">Be the first to know when we launch</p>
@@ -130,30 +137,67 @@
     </div>
 
     <div class="fifth_block">
-        <h2>Your instant travel package is only a click away</h2>
-        <p>Don't miss out!</p>
-        <form>
-            <input type="text" placeholder="Enter your email">
-            <button>Get early access</button>
+        <h2>Your instant travel package <br> is only a click away</h2>
+        <!-- <h2>is only a click away</h2> -->
+        <form class="fifth_block_form">
+            <input type="text" class="fifth_block_text" placeholder="Enter your email">
+            <button class="fifth_block_button">Get early access</button>
         </form>
+        <p class="do_not_miss">Don't miss out!</p>
     </div>
 
     <div class="sixth_block">   
         <h2>FAQ</h2>
         <div class="each_sixth_block">
-            <h3>How does it work?</h3>
-                <!-- <ul>
-                    <li><img src="images/dash.png"/> Enter travel information</li>
-                    <li><img src="images/dash.png"/> Enter total budget for individual or group</li>
-                    <li><img src="images/dash.png"/> Search and select your package</li>
-                    <li><img src="images/dash.png"/> Pay for package</li>
+            <div class="each_question">
+            <h3 class="question_statement">How does it work?<button class="expand"><img src="images/expand.png"></button></h3>
+            <!-- <button class="expand"><img src="images/expand.png"></button> -->
+                <div class="q1 hidden">
+                <ul>
+                    <li>— Enter travel information</li>
+                    <li>— Enter total budget for individual or group</li>
+                    <li>— Search and select your package</li>
+                    <li>— Pay for package</li>
                 </ul>
-                <img src="images/launch.png"/> -->
-            <h3>Can I customize my package?</h3>
+                <button class="survey">&nbsp;<img src="images/trameter.png">&nbsp;&nbsp;Launch a 2 minute survey</button>
+            </div>
+            </div>
+
+            <div class="each_question">
+            <h3 class="question_statement">Can I customize my package? <button class="expand"><img src="images/expand.png"></button></h3>
+                <div class="q2 hidden">
+                    <ul>
+                        <li>— All packages can be customized to your taste</li>
+                        <li>— You can select your preferred hotel, flight, etc</li>
+                        <li>— You can even save your preferences so you don’t
+                        Have to re-enter them all the time</li>
+                    </ul>
+                    <button class="survey">&nbsp;<img src="images/trameter.png">&nbsp;&nbsp;Launch a 2 minute survey</button>
+                </div>
+            </div>
         </div>
         <div class="each_sixth_block">
-            <h3>What is included in each package?</h3>
-            <h3>How can I help?</h3>
+            <div class="each_question">
+            <h3 class="question_statement">What is included in each package? <button class="expand"><img src="images/expand.png"></button></h3>
+                <div class="q3 hidden">
+                    <ul>
+                        <li>— Flight to and from your destination</li>
+                        <li>— Hotel at your destination</li>
+                        <li>— Car service (optional)</li>
+                    </ul>
+                    <button class="survey">&nbsp;<img src="images/trameter.png">&nbsp;&nbsp;Launch a 2 minute survey</button>
+                </div>
+            </div>
+
+            <div class="each_question">
+            <h3 class="question_statement">How can I help? <button class="expand"><img src="images/expand.png"></button></h3>
+                <div class="q4 hidden">
+                    <p class>We’re still collecting feedbacks from travelers like you and will 
+                        appreciate if you can take this 2 minutes survey to tell us about your travel experience
+                    </p>
+                    <button class="survey">&nbsp;<img src="images/trameter.png">&nbsp;&nbsp;Launch a 2 minute survey</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -161,12 +205,14 @@
         <div class="footer_trameter">trameter <img src="images/green_heart.png"/></div>
         <div class="footer_logos">
             <a href="https://www.instagram.com/trameter/"><img src="images/instagram.png" class="logo"/></a>
-            <a href="https://www.twitter.com/trameter/"><img src="images/twitter.png" class="logo"/></a>
+            <a href="https://twitter.com/RealTrameter"><img src="images/twitter.png" class="logo"/></a>
             <a href="https://www.linkedin.com/company/trameter/"><img src="images/linkedin.png" class="logo"/></a>
             <a href="https://www.facebook.com/trameter/""><img src="images/facebook.png" class="logo"/></a>
         </div>
         <div class="email"><a href="mailto:hello@trameter.com?subject=Got a question or feedback for you"><img src="images/mail.png">  hello@trameter.com</a></div>
     </footer>
+
+    <script src="interactivity.js"></script>
 
 </body>
 </html>

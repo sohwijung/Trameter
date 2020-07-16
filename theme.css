@@ -7,19 +7,49 @@ html, body {
 
 header {
     background: #353B51;
-    height: 8%;
+    height: 80px;
     width: 100%;
     display: inline-block;
-    border-radius: 36px;
+    position: fixed;
+    vertical-align: middle;
+}
+
+.header_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header_form {
+    display: flex;
+    flex-direction: row;
+    vertical-align: middle;
+    padding: 18px 0;
+    margin-right: 40px;
+}
+
+.header_text {
+    background-color: #DAE0EC;
+    font-size: 15px;
+    width: 300px;
+    height: 40px;
+    padding-left: 20px;
+    color: #707070;
+}
+
+.header_button {
+    background-color: #353B51;
+    font-size: 15px;
+    height: 40px;
+    border: 0.5px solid #FFFFFF;
 }
 
 h2 {
     color: white;
     font-family: 'PT Sans', sans-serif;
-    font-size: 50px;
     margin-bottom: 0px;
-    font-weight: lighter;
-    padding-top: 10%;
+    /* font-weight: lighter; */
+    /* padding-top: 10%; */
 }
 
 p {
@@ -34,14 +64,21 @@ input {
     height: 50px;
     margin-right: 0px;
     font-size: 18px;
+    border-radius: 30px 0 0 30px;
+    border: 1px solid #707070;
 }
 
 button {
-    width: 30%;
+    width: 40%;
     height: 50px;
     font-size: 18px;
     color: white;
     background-color: #FF725E;
+    border-radius: 0 30px 30px 0;
+    border: 1px solid #FF725E;
+}
+a {
+    text-decoration: none;
 }
 
 .main_link {
@@ -49,66 +86,119 @@ button {
     color: white;
     font-size: 25px;
     margin-left: 100px;
-    vertical-align: center;
+    margin-top: 24px;
 } 
 
 .instantly {
     font-family: 'PT Sans', sans-serif;
     color: black;
-    font-size: 44px;
+    /* font-size: 3vw; */
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.main_description {
+    font-size: 19px;
+    font-weight: normal;
 }
 
 .first_block {
     display: flex;
     flex-direction: row;
-    height: 92%;
+    height: 550px;
     margin-top: 0px;
 }
 
 .element_first_block {
     width: 50%;
+    margin-top: 8%;
+}
+
+.description_first_block {
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 120px;
-    padding-bottom: 110px;
 }
 
 .element_first_block img {
-    width: 80%;
-    padding-right: 50px;
+    width: 50%;
+    /* margin-top: 10%; */
+    padding-left: 30%;
+}
+
+.first_block_form {
+    font-size: 0;
+    margin-top: 6%;
+}
+
+.first_block_text { 
+    padding-left: 20px;
+    color: #707070;
+}
+
+input[type=text]:focus {
+    border-radius: 30px 0 0 30px;
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+.first_block_button {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
 }
 
 .second_block {
     background-color: #353B51;
-    height: 100%;
+    height: 650px;
     text-align: center;
+    margin-bottom: 10%;
 }
 
-.booking, .made_by, .be_first, .changing {
+.second_block h2 {
+    padding-top: 7%;
+    font-size: 44px;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+.booking, .made_by, .be_first, .changing, .do_not_miss {
     color: #DAE0EC;
+    margin-top: 8px;
+    margin-bottom: 0;
 }
 
 .in_second_block {
     display: flex;
     flex-direction: row;
-    padding: 50px;
+    padding: 80px;
+    justify-content: space-between;
 }
 
 .each_in_second_block {
-    margin-top: 80px;
+    margin-top: 0px;
     background-color: white;
     height: 250px;
     border-radius: 10px;
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-left: 40px;
     margin-right: 40px;
+    padding-bottom: 0;
+    width: 20%;
+}
+
+.each_in_second_block p {
+    font-size: 20px;
+    font-weight: lighter;
 }
 
 .each_in_second_block h3 {
     font-family: 'PT Sans', sans-serif;
-    font-size: 28px;
+    font-size: 22px;
 }
 
 .third_block {
@@ -116,13 +206,21 @@ button {
     text-align: center;
     width: 90%;
     margin: 0 auto;
+    height: 750px;
+    border-radius: 10px;
+}
+
+.third_block h2 {
+    padding-top: 6%;
+    font-size: 40px;
+    font-weight: lighter;
 }
 
 .in_third_block {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 80px;
+    margin-top: 70px;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -131,18 +229,41 @@ button {
     color: white;
 }
 
-.third_block form {
-    margin-top: 100px;
+.third_block_form {
+    margin-top: 110px;
+    display: inline-block;
+    width: 100%;
+    font-size: 0;
+}
+
+.third_block_text {
+    width: 40%;
+    padding-left: 20px;
+    color: #707070;
+
+}
+
+.third_block_button {
+    width: 20%;
+    font-weight: bold;
 }
 
 .be_first {
     padding-bottom: 50px;
+    text-align: left;
+    margin-left: 21.5%;
 }
 
 .fourth_block {
     background: #353B51;
     text-align: center;
-    height: 100%;
+    height: 900px;
+}
+
+.fourth_block h2 {
+    font-size: 44px;
+    font-weight: lighter;
+    padding-top: 7%;
 }
 
 .in_fourth_block {
@@ -163,37 +284,50 @@ button {
     border-style: solid;
     border-color: #707070;
     border-width: 1px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     margin: 30px;
     margin-top: 80px;
     margin-bottom: 150px;
     width: 25%;
+    border-radius: 10px;
 }
 
 .each_p_in_fourth_block {
     background-color: white;
-    padding: 14px;
+    padding: 10px;
     text-align: center;
+    border-radius: 0 0 10px 10px;
+    height: 350px;
+    line-height: 35px;
+}
+
+.each_p_in_fourth_block p {
+    font-size: 22px;
+    padding: 30px;
 }
 
 .students {
     background-color: #84EBAD;
-    width: 100%;
-    padding: 2px;
+    width: 50%;
 }
 
 .professionals {
     background-color: #CA5E8F;
     color: white;
-    width: 100%;
-    padding: 2px;
+    width: 50%;
 }
 
 .vacationers {
     background-color: #6796B4;
     color: white;
-    width: 100%;
-    padding: 2px;
+    width: 50%;
+}
+
+p.students, p.professionals, p.vacationers {
+    font-size: 20px;
+    padding: 6px;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
 .fifth_block {
@@ -201,14 +335,34 @@ button {
     width: 75%;
     border-radius: 20px;
     margin: 0 auto;
-    margin-top: 160px;
-    margin-bottom: 100px;
+    margin-top: 150px;
+    margin-bottom: 150px;
     text-align: center;
-    height: 50%;
+    height: 400px;
 }
 
-.fifth_block form {
-    margin-top: 6%;
+.fifth_block h2 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 7%;
+}
+
+.fifth_block_form {
+    margin-top: 60px;
+    display: inline-block;
+    font-size: 0;
+    width: 100%;
+}
+
+.fifth_block_text {
+    width: 50%;
+    padding-left: 20px;
+    color: #707070;
+}
+
+.fifth_block_button {
+    width: 20%;
+    font-weight: bold;
 }
 
 .fifth_block p {
@@ -222,7 +376,8 @@ button {
 .sixth_block h2 {
     text-align: center;
     color: black;
-    font-weight: normal;
+    font-size: 44px;
+    font-weight: bold;
     margin-bottom: 40px;
 }
 
@@ -241,10 +396,84 @@ button {
 
 .each_sixth_block h3 {
     background-color: #353B51;
-    width: 500px;
+    /* width: 500px; */
     margin-left: 20px;
     margin-right: 20px;
     padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.hidden {
+    display: none;
+    background-color: white;
+    position: absolute
+}
+
+.expand {
+    background-color: #353B51;
+    width: 3%;
+    border-radius: 0;
+    border-color: #353B51;
+    margin-right: 22px;
+}
+
+.expand:hover, .survey:hover {
+    cursor: pointer;
+}
+
+.each_question {
+    background-color: #353B51;
+    margin: 30px;
+    padding: 0;
+    width: 500px;
+    font-family: PT Sans;
+}
+
+.question_statement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.each_question h3 {
+    margin: 5 auto;
+    margin-left: 10px;
+
+}
+
+.each_question ul li, .each_question p {
+    color: white;
+    font-size: 20px;
+    padding: 8px;
+    /* margin-bottom: 10px; */
+}
+
+.each_question p {
+    padding: 20px;
+}
+
+.survey img {
+    width: 12%;
+}
+
+.survey {
+    background-color: #6796B4;
+    width: 320px;
+    text-align: center;
+    border-radius: 30px;
+    margin-left: 20px;
+    font-size: 22px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    font-family: PT Sans;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 footer {
@@ -268,8 +497,22 @@ footer {
     margin-bottom: 15px;
 }
 
+.footer_logos {
+    margin-top: 20px;
+}
+
+.footer_logos img {
+    opacity: 0.6;
+}
+
+.footer_logos img:hover {
+    opacity: 1;
+
+}
+
+
 .email {
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .email a {
