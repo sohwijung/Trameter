@@ -12,10 +12,3 @@ buttons.forEach((button, index) => {
         question.classList.toggle('hidden');
     })
 })
-
-// buttons.forEach((button) => {
-//     button.addEventListener('click', e => {
-//         console.log(e);
-//         // button.classList.remove('hidden');
-//     });
-// });

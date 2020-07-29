@@ -10,26 +10,49 @@
 <body>
     <header>
         <div class = "header_flex">
-            <a href="index.html"><h1 class="main_link">trameter <img src="images/green_heart.png"/></h1></a>
+            <a href="index.html"><h1 class="main_link">Trameter</h1></a>
             <form class="header_form">
-                <input type="text" placeholder="Enter your email" class="header_text">
-                <button class="header_button">Get early access</button>
+                <input type="email" name="email" placeholder="Enter your email" class="header_text">
+                    <button class="header_button">Get early access</button>
             </form>
         </div>
     </header>
 
+    <div class="modal">
+        <div class="modal-content">
+            <div class="close"><button><img src="images/close.png"></button></div>
+            <div class="thanks">
+                <h3>👋 Hey there</h3>
+                <h4>Thank you for requesting early access</h4>
+                <p>Please check your email in a moment to verify the request</p>
+            </div>
+            <div class="share">
+                <h3>Share with a friend</h3>
+                <p>It only takes 5 seconds to share with everyone!</p>
+                <div class="modal_logos">
+                    <a href="https://twitter.com/RealTrameter" class="twitter"><img src="images/twitter-color.png" class="logo"/>Twitter</a>
+                    <a href="https://www.facebook.com/trameter/" class="facebook"><img src="images/facebook-color.png" class="logo"/>Facebook</a>
+                    <a href="https://www.linkedin.com/company/trameter/" class="linkedin"><img src="images/linkedin-color.png" class="logo"/>Linkedin</a>
+                    <a href="mailto:hello@trameter.com" class="email-color"><img src="images/mail-color.png"> E-mail</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="first_block">
+        <!-- <div class="first_element_first_block"> -->
         <div class="element_first_block">
             <div class="description_first_block">
-            <h2 class="instantly">Instantly book travel packages created from your budget</h2>
-            <p class="main_description">Trameter automatically combines the best hotel, flight, and car into a single travel package that matches your budget. It's free!</p>
+            <h2 class="instantly">Book travel packages <br> based on your budget</h2>
+            <div class="main_description_box"><p class="main_description">Trameter combines the best hotel, flight, and ride-share into a single travel package that matches your budget for free!</p></div>
             <form>
                 <div class="first_block_form">
-                    <input type="text" placeholder="Enter your email" class="first_block_text">
+                    <input type="email" name ="email" placeholder="Enter your email" class="first_block_text">
                     <button class="first_block_button">Get early access</button>
                 </div>
             </form>
             </div>
+        <!-- </div> -->
         </div>
 
         <div class="element_first_block"><img src="images/trip-pana.png"/></div>
@@ -43,19 +66,19 @@
             <div class="each_in_second_block">
                 <img src="images/time.png"/>
                 <h3>Save time</h3>
-                <p>Go from hours to minutes when booking travel with Trameter. It really is that fast and easy.</p>
+                <p>Go from hours to a few minutes when booking travel with Trameter</p>
             </div>
 
             <div class="each_in_second_block">
                 <img src="images/budget.png"/>
                 <h3>Your budget is enough</h3>
-                <p>Vacation or business trip? It doesn't matter. Enter your budget, count to 5 and get your unique package!</p>
+                <p>Enter your budget, count to 10 and get your unique package</p>
             </div>
 
             <div class="each_in_second_block">
                 <img src="images/platform.png"/>
                 <h3>1 platform for everything</h3>
-                <p>Plan, personalize, and choose your budget-matching packages. Pay for everything with a single click.</p>
+                <p>Pay for your budget-matching packages with a single click.</p>
             </div>
         </div>
     </div>
@@ -75,8 +98,7 @@
                 <p>Enter your budget</p>
             </div>
 
-            <div class="each_in_third_block">
-
+            <div class="each_in_third_block arrow">
             <img src="images/arrow.png"/>
             <p>Generate packages</p>
             </div>
@@ -95,11 +117,11 @@
 
 
         <form class="third_block_form">
-            <input type="text" class = "third_block_text" placeholder="Enter your email">
+            <input type="email" name="email" class="third_block_text" placeholder="Enter your email">
             <button class = "third_block_button" >Get early access</button>
         </form>
 
-        <p class="be_first">Be the first to know when we launch</p>
+        <!-- <p class="be_first">Be the first to know when we launch</p> -->
     </div>
 
     <div class="fourth_block">
@@ -111,7 +133,7 @@
                 <h3>Students <img src="images/green_heart_students.png"></h3>
 
                 <div class="each_p_in_fourth_block">
-                    <p>Spring break, long weekend, group or solo, you don’t have to search through hundreds of flights and hotels anymore</p>
+                    <p>Spring break or long weekend? Find your package fast</p>
                     <div class="hashtag"><p class="students">#TryTrameter</p></div>
                 </div>
             </div>
@@ -120,7 +142,7 @@
                 <h3>Professionals <img src="images/pink_heart.png"></h3>
 
                 <div class="each_p_in_fourth_block">
-                    <p>You shouldn’t have to stay up late just to find the best travel deals. The best deals are the ones that match your budget</p>
+                    <p>No more late nights to find travel deals - your budget is enough</p>
                     <div class="hashtag"><p class="professionals">#TryTrameter</p></div>
                 </div>
             </div>
@@ -129,25 +151,30 @@
                 <h3>Vacationers <img src="images/blue_heart.png"></h3>
 
                 <div class="each_p_in_fourth_block">
-                    <p>Single, family, or group vacations shouldn’t be a pain to plan. You don’t even need a travel agent anymore. Seriously!</p>
+                    <p>Planning travel shouldn’t be painful - no need for travel agents anymore</p>
                     <div class="hashtag"><p class="vacationers">#TryTrameter</p></div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div id="formClick">
     <div class="fifth_block">
         <h2>Your instant travel package <br> is only a click away</h2>
         <!-- <h2>is only a click away</h2> -->
-        <form class="fifth_block_form">
-            <input type="text" class="fifth_block_text" placeholder="Enter your email">
+        <form class="fifth_block_form"">
+            <input type="email" name="email" class="fifth_block_text" placeholder="Enter your email">
             <button class="fifth_block_button">Get early access</button>
         </form>
         <p class="do_not_miss">Don't miss out!</p>
     </div>
+    </div>
+
+    <hr>
 
     <div class="sixth_block">   
         <h2>FAQ</h2>
+    <div class="sixth_block_flex">   
         <div class="each_sixth_block">
             <div class="each_question">
             <h3 class="question_statement">How does it work?<button class="expand"><img src="images/expand.png"></button></h3>
@@ -159,12 +186,26 @@
                     <li>— Search and select your package</li>
                     <li>— Pay for package</li>
                 </ul>
-                <button class="survey">&nbsp;<img src="images/trameter.png">&nbsp;&nbsp;Launch a 2 minute survey</button>
+                <a href="https://trameter.typeform.com/to/BMWb1MQs"><button class="survey">&nbsp;<img src="images/trameter.png">&nbsp;&nbsp;&nbsp;Launch 2 minute survey</button></a>
             </div>
             </div>
 
             <div class="each_question">
-            <h3 class="question_statement">Can I customize my package? <button class="expand"><img src="images/expand.png"></button></h3>
+            <h3 class="question_statement">What's included in each package? <button class="expand"><img src="images/expand.png"></button></h3>
+                <div class="q3 hidden">
+                    <ul>
+                        <li>— Flight to and from your destination</li>
+                        <li>— Hotel at your destination</li>
+                        <li>— Car service (optional)</li>
+                    </ul>
+                    <a href="https://trameter.typeform.com/to/BMWb1MQs"><button class="survey">&nbsp;<img src="images/trameter.png">&nbsp;&nbsp;&nbsp;Launch 2 minute survey</button></a>
+            </div>
+            </div>
+        </div>
+            
+        <div class="each_sixth_block">
+            <div class="each_question">
+            <h3 class="question_statement">Can I custom my package? <button class="expand"><img src="images/expand.png"></button></h3>
                 <div class="q2 hidden">
                     <ul>
                         <li>— All packages can be customized to your taste</li>
@@ -172,22 +213,9 @@
                         <li>— You can even save your preferences so you don’t
                         Have to re-enter them all the time</li>
                     </ul>
-                    <button class="survey">&nbsp;<img src="images/trameter.png">&nbsp;&nbsp;Launch a 2 minute survey</button>
+                    <a href="https://trameter.typeform.com/to/BMWb1MQs"><button class="survey">&nbsp;<img src="images/trameter.png">&nbsp;&nbsp;&nbsp;Launch 2 minute survey</button></a>
                 </div>
-            </div>
-        </div>
-        <div class="each_sixth_block">
-            <div class="each_question">
-            <h3 class="question_statement">What is included in each package? <button class="expand"><img src="images/expand.png"></button></h3>
-                <div class="q3 hidden">
-                    <ul>
-                        <li>— Flight to and from your destination</li>
-                        <li>— Hotel at your destination</li>
-                        <li>— Car service (optional)</li>
-                    </ul>
-                    <button class="survey">&nbsp;<img src="images/trameter.png">&nbsp;&nbsp;Launch a 2 minute survey</button>
-                </div>
-            </div>
+            </div>          
 
             <div class="each_question">
             <h3 class="question_statement">How can I help? <button class="expand"><img src="images/expand.png"></button></h3>
@@ -195,10 +223,11 @@
                     <p class>We’re still collecting feedbacks from travelers like you and will 
                         appreciate if you can take this 2 minutes survey to tell us about your travel experience
                     </p>
-                    <button class="survey">&nbsp;<img src="images/trameter.png">&nbsp;&nbsp;Launch a 2 minute survey</button>
+                    <a href="https://trameter.typeform.com/to/BMWb1MQs"><button class="survey">&nbsp;<img src="images/trameter.png">&nbsp;&nbsp;&nbsp;Launch 2 minute survey</button></a>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <footer>
@@ -212,7 +241,39 @@
         <div class="email"><a href="mailto:hello@trameter.com?subject=Got a question or feedback for you"><img src="images/mail.png">  hello@trameter.com</a></div>
     </footer>
 
-    <script src="interactivity.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyBimTe2pwnEFH3L9hNseOJSEKMrjTND3JE",
+        authDomain: "landing-fed8d.firebaseapp.com",
+        databaseURL: "https://landing-fed8d.firebaseio.com",
+        projectId: "landing-fed8d",
+        storageBucket: "landing-fed8d.appspot.com",
+        messagingSenderId: "440184975915",
+        appId: "1:440184975915:web:550725353560e72b2f306e",
+        measurementId: "G-ZC6C3DNVR3"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    const db = firebase.firestore();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script>
+
+
+    <script src="scripts/interactivity.js"></script>
+    <script src="scripts/email.js"></script>
 
 </body>
 </html>
